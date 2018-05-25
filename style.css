@@ -8,15 +8,18 @@ body {
     font-family: "Splatfont 2";
     min-height: 100vh;
     display: grid;
+    background-color: gray;
     grid-template-rows: auto 1fr auto;
+    overflow-X: hidden;
 }
 
 p {
     margin-top: 0;
 }
 nav {
-    background-color: #333;
+    background-color: darkblue;
     color: #eee;
+    width: 100%;
 }
 
 img {
@@ -24,11 +27,12 @@ img {
 }
 
 .toggleMenu {
-    background: black;
+    background: #000033;
     cursor: pointer;
     display: block;
     padding: 1.3em;
     text-align: right;
+    margin-top: -8px;
 }
 
 #Toggle {
@@ -132,21 +136,26 @@ nav a:hover {
 
 main {
     padding: 1em;
-}
+    }
 
 footer {
     padding: 1em;
-    background: #333;
+    background: darkblue;
     color: #ddd;
     display: grid;
     grid-template-columns: 1fr auto;
 }
 
 @media screen and (min-width: 40em) {
+    nav {
+        position: static;
+    }
+
     nav>ul {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(10em, 1fr));
     }
+
 
     .toggleMenu {
         display: none;
@@ -170,7 +179,7 @@ footer {
     }
 
     .submenu a {
-        background-color: #333;
+        background-color: darkblue;
     }
 
     nav>ul>li:not(:first-child) a {
@@ -178,3 +187,4 @@ footer {
     }
 
 }
+
