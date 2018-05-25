@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Nav Menu</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <nav id="navi">
+        <input type="checkbox" id="Toggle">
+        <label for="Toggle" class="toggleMenu">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times-circle"></i>
+        </label>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="submenu"><a href="#">About Us</a>
+                <ul>
+                    <li><a href="#">The Team</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Our Partners</a></li>
+                </ul>
+            </li>
+            <li class="submenu"><a href="#">Our Products</a>
+                <ul>
+                    <li><a href="#">Headphones</a></li>
+                    <li><a href="#">Modified PC</a></li>
+                    <li><a href="#">Modified Android</a></li>
+                    <li><a href="#">Accessoires</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Welcome to our site!</h1>
+        <p>We offer the following products:</p>
+        <ul>
+            <li>Headphones;</li>
+            <li>Modified Computers;</li>
+            <li>Modified Android Phones;</li>
+            <li>Accessoires (Phone & Computer)</li>
+        </ul>
+        <img alt="store" src="foto.jpg">
+    </main>
+
+
+    <footer>
+        <script src="script.js"></script>
+        <p>Test</p>
+        <div id="validatie">
+            <a href="http://validator.w3.org/check?uri=referer" target="_blank">
+                <img src="http://blog.boyet.com/blog/files/media/image/valid-html5-blue.png" alt="Valide HTML5"></a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue.gif" alt="Valide CSS">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
